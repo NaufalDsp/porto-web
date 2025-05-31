@@ -3,7 +3,10 @@
  * @license Apache-2.0
  */
 
-import React from 'react'
+/**
+ * Components
+ */
+import { ButtonPrimary, ButtonOutline } from "./Button";
 
 const Hero = () => {
   return (
@@ -43,9 +46,16 @@ const Hero = () => {
         </h2>
 
         <div className="flex items-center gap-3">
-            ButtonPrimary
+            <ButtonPrimary 
+             label="Download CV"
+             icon="download"
+            />
 
-            ButtonOutilne
+            <ButtonOutline
+             href="#about"
+             label="Scroll down"
+             icon="arrow-downward"
+             />
         </div>
     </div>
 
